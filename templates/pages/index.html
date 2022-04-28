@@ -199,8 +199,9 @@
                         <div class="tt-form-btn-inside">
                           <input
                             class="tt-form-control"
-                            type="text"
+                            type="search"
                             id="search"
+                            name="q"
                             placeholder="Kerakli ma'lumotni yozing..."
                             required
                           />
@@ -252,36 +253,14 @@
                   </thead>
 
                   <tbody>
+                    {% for user in candidates %}
                     <tr>
-                      <td>Product One:</td>
-                      <td>25.00</td>
-                      <td>2</td>
-                      <td>50.00</td>
+                      <td>{{ user.name }}</td>
+                      <td>{{ user.last_name }}</td>
+                      <td>{{ user.age }}</td>
+                      <td>{{ user.job }}</td>
                     </tr>
-                    <tr>
-                      <td>Product One:</td>
-                      <td>25.00</td>
-                      <td>3</td>
-                      <td>75.00</td>
-                    </tr>
-                    <tr>
-                      <td>Product One:</td>
-                      <td>25.00</td>
-                      <td>1</td>
-                      <td>25.00</td>
-                    </tr>
-                    <tr>
-                      <td>Product One:</td>
-                      <td>25.00</td>
-                      <td>4</td>
-                      <td>100.00</td>
-                    </tr>
-                    <tr>
-                      <td>Product One:</td>
-                      <td>5.00</td>
-                      <td>2</td>
-                      <td>50.00</td>
-                    </tr>
+                    {% endfor %}
                   </tbody>
                 </table>
               </div>
