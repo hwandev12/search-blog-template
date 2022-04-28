@@ -1,0 +1,366 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Search</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="SUSYS ACADEMY- Biz bilan o'zingizni yanada rivojlantiring"
+    />
+    <meta name="author" content="www.subux.uz" />
+
+    <!-- Mobile Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon (http://www.favicon-generator.org/) -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Analytics - Global site tag (gtag.js) -->
+    <!-- Paste your Google Anaytics code here. -->
+
+    <!-- Google fonts (https://www.google.com/fonts) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Body font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Secondary/Alter font -->
+
+    <!-- Libs and Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/normalize/normalize.min.css' %}"
+    />
+    <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/fontawesome/css/fontawesome-all.min.css' %}"
+    />
+    <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/swiper/css/swiper-bundle.min.css' %}"
+    />
+    <!-- Swiper CSS (https://swiperjs.com/) -->
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/lightgallery/css/lightgallery.min.css' %}"
+    />
+    <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+
+    <!-- Template master CSS -->
+    <link rel="stylesheet" href="{% static 'css/helper.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/theme.css' %}" />
+  </head>
+
+  <body
+    id="body"
+    class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor"
+  >
+    <main id="body-inner">
+      <!-- Begin magic cursor 
+			======================== -->
+      <div id="magic-cursor">
+        <div id="ball"></div>
+      </div>
+      <!-- End magic cursor -->
+
+      <!-- Begin noise background -->
+      <div class="bg-noise"></div>
+      <!-- End noise background -->
+
+      <!-- *****************************************
+			*********** Begin scroll container *********** 
+			****************************************** -->
+      <div id="scroll-container">
+        <!-- ===================
+				///// Begin header /////
+				========================
+				* Use class "tt-header-fixed" to set header to fixed position.
+				-->
+        <header id="tt-header" class="tt-header-fixed">
+          <div class="tt-header-inner">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
+
+            <div class="tt-header-col">
+              <!-- Begin logo 
+							================ -->
+              <div class="tt-logo">
+                <a href="/">
+                  <!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
+                  <img
+                    src="{% static 'img/logo-light.png' %}"
+                    class="tt-logo-light magnetic-item"
+                    alt="SUSYS"
+                  />
+                  <!-- logo light -->
+                </a>
+              </div>
+              <!-- End logo -->
+            </div>
+            <!-- /.tt-header-col -->
+
+            <div class="tt-header-col">
+              <!-- Begin overlay menu toggle button -->
+              <div id="tt-ol-menu-toggle-btn-wrap">
+                <div class="tt-ol-menu-toggle-btn-text">
+                  <span class="text-menu" data-hover="Open">Menu</span>
+                  <span class="text-close">Close</span>
+                </div>
+                <div class="tt-ol-menu-toggle-btn-holder">
+                  <a href="#" class="tt-ol-menu-toggle-btn magnetic-item"
+                    ><span></span
+                  ></a>
+                </div>
+              </div>
+              <!-- End overlay menu toggle button -->
+
+              <!-- Begin overlay menu 
+							======================== 
+							* Use class "tt-ol-menu-center" to align menu to center.
+							* Use class "tt-ol-menu-count" to enable menu counter.
+							-->
+              <nav class="tt-overlay-menu tt-ol-menu-center tt-ol-menu-count">
+                <div class="tt-ol-menu-holder">
+                  <div class="tt-ol-menu-inner tt-wrap">
+                    <div class="tt-ol-menu-content">
+                      <!-- Begin menu list -->
+                      <ul class="tt-ol-menu-list">
+                        <!-- <li><a href="">Single Link</a></li> -->
+
+                        <!-- Begin submenu (submenu master)
+												==================================== -->
+                        <li class="tt-ol-submenu-wrap">
+                          <div class="tt-ol-submenu-trigger">
+                            <a href="#">Home</a>
+                          </div>
+                        </li>
+                        <!-- End submenu (sub-master) -->
+                      </ul>
+                      <!-- End menu list -->
+                    </div>
+                    <!-- /.tt-ol-menu-content -->
+                  </div>
+                  <!-- /.tt-ol-menu-inner -->
+                </div>
+                <!-- /.tt-ol-menu-holder -->
+
+                <!-- Begin noise background -->
+                <div class="bg-noise"></div>
+                <!-- End noise background -->
+              </nav>
+              <!-- End overlay menu -->
+
+              <!-- Begin header tools
+							======================== -->
+              <div class="tt-header-tools">
+                <!-- Begin header tools item (tt-Search) -->
+                <div class="tt-header-tools-item tt-search-trigger-wrap">
+                  <div class="tt-search-trigger">
+                    <div
+                      class="tt-hti-btn tt-search-trigger-icon magnetic-item"
+                      title="Search"
+                    >
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                  <!-- /.tt-search-trigger -->
+
+                  <!-- Begin tt-Search 
+									===================== -->
+                  <div class="tt-search">
+                    <div class="tt-search-close cursor-close">
+                      <div class="bg-noise"></div>
+                    </div>
+                    <div class="tt-search-inner">
+                      <h1 class="tt-search-title tt-search-appear">Qidirish</h1>
+
+                      <!-- Begin form (Note: for design purposes only!)
+											================ 
+											* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+											* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+											-->
+                      <form
+                        class="tt-search-form tt-search-appear tt-form-minimal tt-form-lg"
+                      >
+                        <div class="tt-form-btn-inside">
+                          <input
+                            class="tt-form-control"
+                            type="text"
+                            id="search"
+                            placeholder="Kerakli ma'lumotni yozing..."
+                            required
+                          />
+                          <button type="submit">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </form>
+                      <!-- End form -->
+                    </div>
+                    <!-- /.tt-search-inner -->
+
+                    <div class="tt-search-ghost tt-search-appear">SUSYS</div>
+                    <div class="tt-search-close-btn hide-cursor" title="Close">
+                      <i class="fas fa-times"></i>
+                    </div>
+                  </div>
+                  <!-- End tt-Search -->
+                </div>
+                <!-- End header tools item -->
+              </div>
+              <!-- End header tools -->
+            </div>
+            <!-- /.header-col -->
+          </div>
+          <!-- /.header-inner -->
+        </header>
+        <!-- End header -->
+
+        <div id="content-wrap">
+          <!-- *************************************
+					*********** Begin page content *********** 
+					************************************** -->
+          <div id="page-content">
+            <br /><br /><br /><br />
+
+            <div class="tt-section">
+              <div class="tt-section-inner tt-wrap">
+                <!-- Begin tt-Table 
+								==================== -->
+                <table class="tt-table">
+                  <thead>
+                    <tr>
+                      <th>Ismi</th>
+                      <th>Familiyasi</th>
+                      <th>Yoshi</th>
+                      <th>Kasbi</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Product One:</td>
+                      <td>25.00</td>
+                      <td>2</td>
+                      <td>50.00</td>
+                    </tr>
+                    <tr>
+                      <td>Product One:</td>
+                      <td>25.00</td>
+                      <td>3</td>
+                      <td>75.00</td>
+                    </tr>
+                    <tr>
+                      <td>Product One:</td>
+                      <td>25.00</td>
+                      <td>1</td>
+                      <td>25.00</td>
+                    </tr>
+                    <tr>
+                      <td>Product One:</td>
+                      <td>25.00</td>
+                      <td>4</td>
+                      <td>100.00</td>
+                    </tr>
+                    <tr>
+                      <td>Product One:</td>
+                      <td>5.00</td>
+                      <td>2</td>
+                      <td>50.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <footer id="tt-footer">
+            <div class="tt-footer-inner">
+              <div class="footer-col tt-align-center-left">
+                <div class="footer-col-inner">
+                  <div class="tt-btn tt-btn-link">
+                    <a href="#" class="scroll-to-top" data-hover="Yuqoriga"
+                      >Yuqoriga</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-col tt-align-center order-m-last">
+                <div class="footer-col-inner">
+                  <div class="tt-copyright">
+                    © Copyright -
+                    <a href="#" target="_blank" rel="noopener" class="tt-link"
+                      >SUB_UX</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-col tt-align-center-right">
+                <div class="footer-col-inner">
+                  <div class="footer-social">
+                    <div class="footer-social-text">
+                      <span>Obuna</span><i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="social-buttons">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://t.me/susys_wdg"
+                            class="magnetic-item"
+                            target="_blank"
+                            rel="noopener"
+                            >Tg.</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://instagram.com/susys_wdg"
+                            class="magnetic-item"
+                            target="_blank"
+                            rel="noopener"
+                            >In</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <script src="{% static 'vendor/jquery/jquery.min.js '%}"></script>
+
+    <script src="{% static 'vendor/gsap/gsap.min.js' %}"></script>
+    <script src="{% static 'vendor/gsap/ScrollToPlugin.min.js '%}"></script>
+    <script src="{% static 'vendor/gsap/ScrollTrigger.min.js '%}"></script>
+
+    <script src="{% static 'vendor/smooth-scrollbar.js '%}"></script>
+    <script src="{% static 'vendor/swiper/js/swiper-bundle.min.js '%}"></script>
+    <script src="{% static 'vendor/isotope/imagesloaded.pkgd.min.js '%}"></script>
+    <script src="{% static 'vendor/isotope/isotope.pkgd.min.js '%}"></script>
+    <script src="{% static 'vendor/isotope/packery-mode.pkgd.min.js '%}"></script>
+    <script src="{% static 'vendor/lightgallery/js/lightgallery-all.min.js '%}"></script>
+    <script src="{% static 'vendor/jquery.mousewheel.min.js '%}"></script>
+    <script src="{% static 'js/theme.js '%}"></script>
+  </body>
+</html>
